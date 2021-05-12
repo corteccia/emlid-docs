@@ -60,3 +60,4 @@ Applications and utilities for Navio2.
 * 3D IMU visualizer
 * U-blox SPI to PTY bridge utility
 * U-blox SPI to TCP bridge utility
+* ROS packages installation script

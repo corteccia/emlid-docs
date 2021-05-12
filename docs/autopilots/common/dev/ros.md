@@ -208,3 +208,16 @@ Continue <a href="https://asciinema.org/a/1i915k6h2b0i9sf02mwom7qu8?t=4:01" targ
 
 !!! tip ""
     You always can look more thoroughly on [ROS wiki](http://wiki.ros.org/) to get a better understanding of its concepts.
+
+### Installing ROS packages
+
+On the Emlid Raspbian image ROS Noetic is preinstalled from sources, which means that it is not possible to install some packages using apt. Therefore you should use a pre-built script that will install the required packages on your Raspberry Pi. It requires `apt-get update` before execution.
+
+If you haven't already done that, clone Navio repository using the following [instructions](navio-repository-cloning.md). Enter the directory with install-ROS-packages script and run it passing the required packages as an argument as it shown in example:
+
+```bash
+cd Navio2/Utilities/ROS-packages
+bash install-ROS-packages.sh "tf laser_geometry"
+```
+
+It will take about 30 minutes to install.
